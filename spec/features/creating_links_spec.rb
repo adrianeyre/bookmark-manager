@@ -2,6 +2,9 @@
 # So that I can save a website
 # I would like to add the site's address and title to my bookmark manager
 
+require 'database_cleaner'
+before_reset_database
+
 feature 'As a user I would like to see a list of links' do
   scenario 'Homepage lists links' do
     visit ('/new')
@@ -13,3 +16,5 @@ feature 'As a user I would like to see a list of links' do
     expect(page).to have_content 'http://www.bbc.co.uk'
   end
 end
+
+after_rest_database
