@@ -17,4 +17,5 @@ $ psql
 \q = Quit
 \l = List database
 
+create database "name_of_database";
 ```
