@@ -11,12 +11,12 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        3,
-        3,
+        4,
+        4,
         null,
         null,
         1,
@@ -103,6 +103,15 @@
         null,
         null
       ],
+      "/Users/Mazza/Projects/bookmark_manager/spec/features/default_view_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Mazza/Projects/bookmark_manager/spec/features/viewing_links_spec.rb": [
         1,
         1,
@@ -135,6 +144,6 @@
         null
       ]
     },
-    "timestamp": 1485280786
+    "timestamp": 1485281879
   }
 }
