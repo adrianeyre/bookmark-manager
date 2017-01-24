@@ -1,5 +1,5 @@
-feature "Submit tags" do
-  scenario "Displays form to add new bookmark with tag" do
+feature 'Submit tags' do
+  scenario 'Displays form to add new bookmark with tag' do
     visit 'links/new'
     expect(page.status_code).to eq 200
     fill_in 'url', with: 'http://www.google.co.uk'
