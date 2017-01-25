@@ -6,9 +6,12 @@ def new_link
   click_button 'submit'
 end
 
-def sign_up
+def sign_up(email: 'joe@example.com',
+            password: 'shoobydooby',
+            password_confirmation: 'shoobydooby')
   visit 'users/new'
-  fill_in 'email', with: 'joe@example.com'
-  fill_in 'password', with: 'shoobydooby'
+  fill_in 'email', with: email
+  fill_in 'password', with: password
+  fill_in 'password_confirmation', with: password_confirmation
   click_button 'submit'
 end
