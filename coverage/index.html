@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-01-24T18:17:59+00:00">2017-01-24T18:17:59+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-01-25T18:50:08+00:00">2017-01-25T18:50:08+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.14
+         1.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>8</b> files in total.
-    <b>88</b> relevant lines. 
-    <span class="green"><b>88</b> lines covered</span> and
+    <b>9</b> files in total.
+    <b>90</b> relevant lines. 
+    <span class="green"><b>90</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -93,9 +93,9 @@
       <tr>
         <td class="strong"><a href="#d80844fe4260cac5dd4b0c13b048c693b68f009c" class="src_link" title="spec/features/adding_tags_spec.rb">spec/features/adding_tags_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>10</td>
-        <td>10</td>
+        <td>9</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -126,6 +126,16 @@
         <td>29</td>
         <td>21</td>
         <td>21</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d0b262a483f01377641bf8c03e3ac2c4f59347ac" class="src_link" title="spec/features/webhelpers.rb">spec/features/webhelpers.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -271,25 +281,25 @@
         <li class="covered" data-hits="2" data-linenumber="19">
           <span class="hits">2</span>
           
-          <code class="ruby">    link = Link.new(url: params[:url],</code>
+          <code class="ruby">    link = Link.create(url: params[:url], title: params[:name])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="2" data-linenumber="20">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">                    title: params[:name])</code>
+          <code class="ruby">    params[:tags].split.each do |tag|</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="21">
           <span class="hits">2</span>
           
-          <code class="ruby">    tag = Tag.first_or_create(name: params[:tags])</code>
+          <code class="ruby">      link.tags &lt;&lt; Tag.create(name: tag)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="22">
           
-          <code class="ruby">    link.tags &lt;&lt; tag</code>
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="23">
@@ -631,8 +641,8 @@
     <h3>spec/features/adding_tags_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -655,58 +665,40 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit &#39;links/new&#39;</code>
+          <code class="ruby">    new_link</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page.status_code).to eq 200</code>
+          <code class="ruby">    link = Link.first</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;url&#39;, with: &#39;http://www.google.co.uk&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    fill_in &#39;name&#39;, with: &#39;Google UK&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    fill_in &#39;tags&#39;, with: &#39;search&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_button &#39;submit&#39;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    link = Link.first</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
           <code class="ruby">    expect(link.tags.map(&amp;:name)).to include(&#39;search&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  scenario &#39;I can add multiple tags to a new link&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>
@@ -1037,6 +1029,66 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="d0b262a483f01377641bf8c03e3ac2c4f59347ac">
+  <div class="header">
+    <h3>spec/features/webhelpers.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">def new_link</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  visit &#39;links/new&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &#39;url&#39;, with: &#39;http://www.google.co.uk&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &#39;name&#39;, with: &#39;Google UK&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  fill_in &#39;tags&#39;, with: &#39;search gmail&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  click_button &#39;submit&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
