@@ -5,3 +5,10 @@ def new_link
   fill_in 'tags', with: 'search gmail'
   click_button 'submit'
 end
+
+def sign_up
+  visit 'users/new'
+  fill_in 'email', with: 'joe@example.com'
+  fill_in 'password', with: 'shoobydooby'
+  click_button 'submit'
+end

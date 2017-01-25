@@ -7,6 +7,7 @@ group :test do
   gem 'database_cleaner'
 end
 
+gem 'bcrypt'
 gem 'byebug'
 gem 'capybara'
 gem 'coveralls', require: false
