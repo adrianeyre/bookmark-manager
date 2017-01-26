@@ -2,9 +2,10 @@ require 'timecop'
 
 feature 'Resetting Password' do
   before do
-    sign_up
-    Capybara.reset!
-  end
+     sign_up
+     Capybara.reset!
+     allow(SendRecoverLink).to receive(:call)
+   end
   let(:user) { User.first }
 
  scenario 'When I forget my password I can see a link to reset' do
