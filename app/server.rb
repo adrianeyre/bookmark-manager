@@ -9,6 +9,10 @@ class BookmarkManager < Sinatra::Base
 
   enable :partial_underscores
 
+  get '/' do
+    redirect '/sessions/new'
+  end
+  
   helpers do
     def current_user
       @current_user ||= User.get(session[:user_id])
