@@ -17,7 +17,7 @@ require 'database_cleaner'
 
 
 def sign_up(email: 'newuser@abcd.com', password: '12345678', password_confirmation: '12345678')
-  visit '/signup'
+  visit '/users/new'
   fill_in :email, with: email
   fill_in :password, with: password
   fill_in :password_confirmation, with: password_confirmation
@@ -25,7 +25,7 @@ def sign_up(email: 'newuser@abcd.com', password: '12345678', password_confirmati
 end
 
 def new_link(title: 'BBC', url: 'http://www.bbc.co.uk', tags: 'education' )
-  visit('/new')
+  visit('/links/new')
   fill_in('title', with: title)
   fill_in('url', with: url)
   fill_in('tags',  with: tags)
@@ -37,4 +37,10 @@ def sign_in(email: 'newuser@abcd.com', password: '12345678')
   fill_in :email, with: email
   fill_in :password, with: password
   click_button 'Submit'
+end
+
+def recover_password
+  visit '/users/recover'
+  fill_in :email, with: "test@test.com"
+  click_button "Submit"
 end
