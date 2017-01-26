@@ -16,18 +16,18 @@ class BookmarkManager < Sinatra::Base
 
   get '/links' do
     @links = Link.all
-    erb :links
+    erb :'/links/index'
   end
 
-  post '/new' do
-    redirect '/new'
+  # post '/new' do
+  #   redirect '/links/new'
+  # end
+
+  get '/links/new' do
+    erb :'/links/new'
   end
 
-  get '/new' do
-    erb :new
-  end
-
-  post '/newbookmark' do
+  post '/links' do
     link = Link.new(url: params[:url],title: params[:title])
     params[:tags].split.each do |tag|
       link.tags << Tag.first_or_create(name: tag.downcase)
@@ -42,19 +42,19 @@ class BookmarkManager < Sinatra::Base
     erb :links
   end
 
-  get '/signup' do
+  get '/users/new' do
     @user = User.new
-    erb :signup
+    erb :'/users/new'
   end
 
-  post '/addnewuser' do
+  post '/users/new' do
     @user = User.create(email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
     if @user.save
       session[:user_id] = @user.id
       redirect to('/')
     else
       flash.now[:errors] = @user.errors.full_messages
-      erb :signup
+      erb :'/users/new'
     end
   end
 

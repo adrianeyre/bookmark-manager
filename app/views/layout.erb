@@ -29,7 +29,7 @@ body,td,th {
           <tr>
             <td>
             	<% if current_user %>
-                <form action='/new'>
+                <form action='/links/new'>
                 	<input type='image' value='New Link' src='/images/newlink.png' align="middle">
             	</form>
                 <% end %>
@@ -55,7 +55,7 @@ body,td,th {
                     <input type='image' value='Sign out' src='/images/signout.png' align="middle">
                 </form>
               <% else %>
-                <form action='/signup'>
+                <form action='/users/new'>
                     <input type='image' value='Sign up' src='/images/signup.png' align="middle">
                 </form>
               <% end %>
@@ -80,7 +80,7 @@ body,td,th {
       <td width="20" height="5" bgcolor="#000000">&nbsp;</td>
     </tr>
   </table>
-  
+
 <% if (flash[:errors] && !flash[:errors].empty?) || flash[:notice] %>
     <div id='errors'>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
