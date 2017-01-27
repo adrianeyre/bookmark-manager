@@ -87,5 +87,17 @@ type `http://localhost:4567` into your web browser
 
 ## <a name="Shots">Screen Shots</a>
 
+### Sign In Page
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot1.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot1.png "Screen Shot")
+
 ### Links Page
-[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png "Links Page")
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot2.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot2.png "Screen Shot")
+
+### New Link Page
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot3.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot3.png "Screen Shot")
+
+### Search By Tag Page
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot5.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot5.png "Screen Shot")
+
+### Password Recovery Page
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot6.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/screenshot6.png "Screen Shot")
