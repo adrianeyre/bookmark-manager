@@ -1,0 +1,57 @@
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+.WhiteText {
+	color: #FFF;
+	font-size: 20px;
+}
+.darkbluebox {
+  width: 100%;
+	height: 50px;
+	background-color: #039;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 30px;
+	vertical-align: middle;
+	text-align: left;
+	text-indent: 10px;
+}
+.bluebox {
+  width: 100%;
+	height: 50px;
+	background-color: #09F;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 30px;
+	vertical-align: middle;
+	text-align: left;
+	text-indent: 10px;
+}
+.maininputbox {
+  width: 100%;
+	height: 250px;
+	background-color: #039;
+	box-shadow: 10px 10px 5px #888888;
+	font-size: 18px;
+	vertical-align: middle;
+	text-align: left;
+	text-indent: 10px;
+}
+a:link {
+	color: #FFF;
+}
+a:visited {
+	color: #FFF;
+}
+a:hover {
+	color: #FF0;
+}
+a:active {
+	color: #FFF;
+}
+.WhiteText {
+	color: #FFF;
+	font-size: 20px;
+}

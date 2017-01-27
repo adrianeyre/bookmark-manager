@@ -1,10 +1,30 @@
-<h1> Links </h1>
 
-<ul id='links'>
-  <% @links.each do |link| %>
-    <li>
-      Title: <%= link.title %>
-      URL:   <%= link.url   %>
-    </li>
-  <% end %>
-</ul>
+<br>
+<% @links.each do |link| %>
+	<div class="bluebox">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    	   <tr>
+      		<td>&nbsp;</td>
+    	   </tr>
+    	   <tr>
+      		<td>
+      			Title: <%= link.title %> <a href="<%= link.url %>" target="_blank"><%= link.url %></a>
+      		</td>
+    	   </tr>
+      </table>
+	</div>
+  <br><br>
+<% end %>
+<br>
+<div class="darkbluebox">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td>
+          <a href="/tags">Search by tag</a>
+        </td>
+       </tr>
+    </table>
+</div>

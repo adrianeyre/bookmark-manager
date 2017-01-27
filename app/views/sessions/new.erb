@@ -1,12 +1,64 @@
-<h1>Please sign in</h1>
+<head>
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
 
-<form action='/sessions' method='post'>
-  <label for='email'>
-    Email: <input name='email' type='email'>
-  </label>
-  <label for='password'>
-    Password: <input name='password' type='password'>
-  </label>
-  <input type='submit' value='Submit'>
-</form>
-<a href="/users/recover">I forgot my password</a>
+<br><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td width="500">
+      <div class="maininputbox">
+      <form id="newentry" name="newentry" method="post" action="/sessions">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500" align="center" class="WhiteText">Please sign in</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500" height="40"><label for='email'>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name='email' type='email' size="50"></label></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500" height="40"><label for='password'>Password: <input name='password' type='password' size="50"></label></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500" height="40" align="center"><input type='submit' value='Submit'></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500" align="center"><a href="/users/recover">I forgot my password</a></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td width="500">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+      </form>
+      </div>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
