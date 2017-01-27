@@ -15,3 +15,11 @@ def sign_up(email: 'joe@example.com',
   fill_in 'password_confirmation', with: password_confirmation
   click_button 'submit'
 end
+
+def sign_in(email: 'joe@example.com',
+            password: 'shoobydooby')
+  visit 'sessions/new'
+  fill_in 'email', with: email
+  fill_in 'password', with: password
+  click_button 'log in'
+end
