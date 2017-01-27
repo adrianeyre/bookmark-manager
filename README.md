@@ -8,7 +8,7 @@
 * [Usage] (#Usage)
 * [Database Schema] (#Database)
 * [Screen Shots] (#Shots)
-* [Play live on Heroku] (#Heroku)
+* [Use live on Heroku] (#Heroku)
 
 ## <a name="GEMS">Gems Used</a>
 ```ruby
@@ -78,7 +78,7 @@ $ ruby app.rb
 ```
 type `http://localhost:4567` into your web browser
 
-## <a name="Heroku">Play live on Heroku</a>
+## <a name="Heroku">Use live on Heroku</a>
 
 [Bookmark Manager] (https://adrianeyre-bookmarkmanager.herokuapp.com/)
 
