@@ -88,4 +88,4 @@ type `http://localhost:4567` into your web browser
 ## <a name="Shots">Screen Shots</a>
 
 ### Links Page
-[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png "Schema 2")
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/linksform.png "Links Page")
