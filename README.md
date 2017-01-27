@@ -83,8 +83,11 @@ type `http://localhost:4567` into your web browser
 [Bookmark Manager] (https://adrianeyre-bookmarkmanager.herokuapp.com/)
 
 ## <a name="Database">Database Schema</a>
-[![Schema1](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema1.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema1.png "Schema 1")
+[![Schema](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema1.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema1.png "Schema 1")
 
-[![Schema1](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema2.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema2.png "Schema 2")
+[![Schema](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema2.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema2.png "Schema 2")
 
 ## <a name="Shots">Screen Shots</a>
+
+### Links Page
+[![ScreenShot](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/links.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/links.png "Schema 2")
