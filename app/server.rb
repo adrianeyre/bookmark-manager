@@ -2,8 +2,12 @@ class BookmarkManager < Sinatra::Base
   set :views, File.dirname(__FILE__) + '/views'
   use Rack::MethodOverride
   register Sinatra::Flash
-  enable :sessions
+  register Sinatra::Partial
   set :session_secret, 'super secret'
+  set :partial_template_engine, :erb
+
+  enable :sessions
+  enable :partial_underscores
 
   helpers do
     def current_user

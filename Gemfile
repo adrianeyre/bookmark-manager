@@ -25,3 +25,4 @@ gem 'rubocop-rspec'
 gem 'simplecov', require: false, group: :test
 gem 'sinatra'
 gem 'sinatra-flash'
+gem 'sinatra-partial'
