@@ -4,6 +4,8 @@
 
 feature 'View links:' do
   scenario 'See list of links on the homepage' do
+    sign_up
+    sign_in
     Link.create(url: 'http://google.com', title: 'Google Homepage')
     visit '/links'
     expect(page).to have_content ('http://google.com')

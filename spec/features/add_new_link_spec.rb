@@ -4,6 +4,8 @@
 
 feature 'Add links:' do
   scenario 'Enter a link and add to database' do
+    sign_up
+    sign_in
     new_link
     expect(page).to have_content 'http://www.bbc.co.uk'
     link = Link.first
