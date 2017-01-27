@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-01-27T12:49:17+00:00">2017-01-27T12:49:17+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-01-27T13:15:54+00:00">2017-01-27T13:15:54+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.11
+         2.06
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>14</b> files in total.
-    <b>192</b> relevant lines. 
-    <span class="green"><b>192</b> lines covered</span> and
+    <b>19</b> files in total.
+    <b>202</b> relevant lines. 
+    <span class="green"><b>202</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,11 +53,51 @@
       <tr>
         <td class="strong"><a href="#9358ed8cfb0dd386e22d3ff3259626b14a995e02" class="src_link" title="app/app.rb">app/app.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>91</td>
-        <td>55</td>
-        <td>55</td>
+        <td>13</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#38ee2b8e812f4850d3a290d58f2f9548dc9fdc19" class="src_link" title="app/controllers/links.rb">app/controllers/links.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
         <td>3.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#d10142595b4bd4aa818d1eee36d72ff9379794af" class="src_link" title="app/controllers/sessions.rb">app/controllers/sessions.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>22</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4309a5ae8120cd9ca7daedd217c35852793d1dfb" class="src_link" title="app/controllers/tags.rb">app/controllers/tags.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#311cd15597e71543746d3963bd5e2df4bde58f4a" class="src_link" title="app/controllers/users.rb">app/controllers/users.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>5.2</td>
       </tr>
       
       <tr>
@@ -98,6 +138,16 @@
         <td>15</td>
         <td>0</td>
         <td>2.9</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#57647e32379ec9b4b2a9e171a05af055f9cea84e" class="src_link" title="app/server.rb">app/server.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>5.4</td>
       </tr>
       
       <tr>
@@ -211,8 +261,8 @@
     <h3>app/app.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>55</b> relevant lines. 
-      <span class="green"><b>55</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -241,25 +291,25 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;./models/link.rb&#39;</code>
+          <code class="ruby">require &#39;sinatra/flash&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;./models/tag.rb&#39;</code>
+          <code class="ruby">require_relative &#39;data_mapper_setup&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">require_relative &#39;data_mapper_setup&#39;</code>
+          <code class="ruby">require_relative &#39;./models/link.rb&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;sinatra/flash&#39;</code>
+          <code class="ruby">require_relative &#39;./models/tag.rb&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
@@ -271,496 +321,532 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
+          <code class="ruby">require_relative &#39;controllers/links&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  use Rack::MethodOverride</code>
+          <code class="ruby">require_relative &#39;controllers/sessions&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">  register Sinatra::Flash</code>
+          <code class="ruby">require_relative &#39;controllers/tags&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  enable :sessions</code>
+          <code class="ruby">require_relative &#39;controllers/users&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  set :session_secret, &#39;super secret&#39;</code>
+          <code class="ruby">require_relative &#39;server&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="38ee2b8e812f4850d3a290d58f2f9548dc9fdc19">
+  <div class="header">
+    <h3>app/controllers/links.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;/&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="16">
+        <li class="covered" data-hits="6" data-linenumber="3">
           <span class="hits">6</span>
           
           <code class="ruby">    redirect &#39;/links&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;/links&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="20">
+        <li class="covered" data-hits="12" data-linenumber="7">
           <span class="hits">12</span>
           
           <code class="ruby">    @links = Link.all</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="21">
+        <li class="covered" data-hits="12" data-linenumber="8">
           <span class="hits">12</span>
           
           <code class="ruby">    erb :&#39;links/index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  post &#39;/links&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="25">
+        <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
           <code class="ruby">    link = Link.create(url: params[:url],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">                       title: params[:name])</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="27">
+        <li class="covered" data-hits="2" data-linenumber="14">
           <span class="hits">2</span>
           
           <code class="ruby">    params[:tags].split.each do |tag|</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="28">
+        <li class="covered" data-hits="2" data-linenumber="15">
           <span class="hits">2</span>
           
           <code class="ruby">      link.tags &lt;&lt; Tag.create(name: tag)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="30">
+        <li class="covered" data-hits="2" data-linenumber="17">
           <span class="hits">2</span>
           
           <code class="ruby">    link.save</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="31">
+        <li class="covered" data-hits="2" data-linenumber="18">
           <span class="hits">2</span>
           
           <code class="ruby">    redirect to(&#39;/links&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;/links/new&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="35">
+        <li class="covered" data-hits="2" data-linenumber="22">
           <span class="hits">2</span>
           
           <code class="ruby">    erb :&#39;links/new&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="d10142595b4bd4aa818d1eee36d72ff9379794af">
+  <div class="header">
+    <h3>app/controllers/sessions.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/tags/:name&#39; do</code>
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    tag = Tag.first(name: params[:name])</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @links = tag ? tag.links : []</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    erb :&#39;links/index&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  get &#39;/users/new&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="45">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    @user = User.new</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="46">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    erb :&#39;users/new&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  post &#39;/users&#39; do</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="50">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    @user = User.new(email: params[:email],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">                     password: params[:password],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="52">
-          
-          
-          <code class="ruby">                     password_confirmation: params[:password_confirmation])</code>
-        </li>
-      
-        <li class="covered" data-hits="9" data-linenumber="53">
-          <span class="hits">9</span>
-          
-          <code class="ruby">    if @user.save</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="54">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      session[:user_id] = @user.id</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="55">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      redirect to(&#39;/&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">    else</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="57">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      flash.now[:errors] = @user.errors.full_messages</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="58">
-          <span class="hits">4</span>
-          
-          <code class="ruby">      erb :&#39;users/new&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="59">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="60">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;/sessions/new&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="63">
+        <li class="covered" data-hits="3" data-linenumber="3">
           <span class="hits">3</span>
           
           <code class="ruby">    erb :&#39;sessions/new&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  post &#39;/sessions&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="67">
+        <li class="covered" data-hits="3" data-linenumber="7">
           <span class="hits">3</span>
           
           <code class="ruby">    user = User.authenticate(params[:email], params[:password])</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="68">
+        <li class="covered" data-hits="3" data-linenumber="8">
           <span class="hits">3</span>
           
           <code class="ruby">    if user</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="69">
+        <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
           <code class="ruby">      session[:user_id] = user.id</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="70">
+        <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
           <code class="ruby">      redirect to(&#39;/links&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">      flash.now[:errors] = [&#39;The email or password is incorrect&#39;]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">      erb :&#39;sessions/new&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="77">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">  delete &#39;/sessions&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="78">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">    session[:user_id] = nil</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="79">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">    flash.keep[:notice] = &#39;Goodbye!&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    redirect to &#39;/links&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="82">
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="4309a5ae8120cd9ca7daedd217c35852793d1dfb">
+  <div class="header">
+    <h3>app/controllers/tags.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/tags/:name&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    tag = Tag.first(name: params[:name])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @links = tag ? tag.links : []</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    erb :&#39;links/index&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="311cd15597e71543746d3963bd5e2df4bde58f4a">
+  <div class="header">
+    <h3>app/controllers/users.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;/users/new&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="3">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    @user = User.new</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="4">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    erb :&#39;users/new&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="83">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  helpers do</code>
+          <code class="ruby">  post &#39;/users&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="84">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="9" data-linenumber="8">
+          <span class="hits">9</span>
           
-          <code class="ruby">    def current_user</code>
+          <code class="ruby">    @user = User.new(email: params[:email],</code>
         </li>
       
-        <li class="covered" data-hits="45" data-linenumber="85">
-          <span class="hits">45</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">      @current_user ||= User.get(session[:user_id])</code>
+          
+          <code class="ruby">                     password: params[:password],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">                     password_confirmation: params[:password_confirmation])</code>
+        </li>
+      
+        <li class="covered" data-hits="9" data-linenumber="11">
+          <span class="hits">9</span>
+          
+          <code class="ruby">    if @user.save</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="12">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      session[:user_id] = @user.id</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="13">
+          <span class="hits">5</span>
+          
+          <code class="ruby">      redirect to(&#39;/&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      flash.now[:errors] = @user.errors.full_messages</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="16">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      erb :&#39;users/new&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="89">
-          
-          
-          <code class="ruby">  # start the server if ruby file executed directly</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="90">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  run! if app_file == $PROGRAM_NAME</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
@@ -1151,6 +1237,120 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="57647e32379ec9b4b2a9e171a05af055f9cea84e">
+  <div class="header">
+    <h3>app/server.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class BookmarkManager &lt; Sinatra::Base</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :views, File.dirname(__FILE__) + &#39;/views&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  use Rack::MethodOverride</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  register Sinatra::Flash</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  enable :sessions</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  set :session_secret, &#39;super secret&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  helpers do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def current_user</code>
+        </li>
+      
+        <li class="covered" data-hits="45" data-linenumber="10">
+          <span class="hits">45</span>
+          
+          <code class="ruby">      @current_user ||= User.get(session[:user_id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # start the server if ruby file executed directly</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  run! if app_file == $PROGRAM_NAME</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
