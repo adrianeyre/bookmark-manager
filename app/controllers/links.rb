@@ -1,7 +1,11 @@
 class BookmarkManager < Sinatra::Base
   get '/links' do
-    @links = Link.all
-    erb :'links/index'
+    if session[:user_id]
+      @links = Link.all
+      erb :'links/index'
+    else
+      erb :'sessions/new'
+    end
   end
 
   post '/links' do
