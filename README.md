@@ -1,5 +1,5 @@
 # Bookmark Manager Challenge
-#### Technologies: Ruby, Rspec, Sinatra, Heroku, HTML, CSS
+#### Technologies: Ruby, Rspec, Sinatra, Heroku, HTML, CSS, Postgres, SQL, DataMapper
 ### [Makers Academy] (http://www.makersacademy.com) - Week 4 Pair Programming Project
 
 ## Index
