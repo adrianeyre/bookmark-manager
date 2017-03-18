@@ -3,13 +3,13 @@
 ### [Makers Academy](http://www.makersacademy.com) - Week 4 Pair Programming Project
 
 ## Index
-* [Gems Used] (#GEMS)
-* [Installtion] (#Install)
-* [User Stories] (#US)
-* [Usage] (#Usage)
-* [Database Schema] (#Database)
-* [Screen Shots] (#Shots)
-* [Use live on Heroku] (#Heroku)
+* [Gems Used](#GEMS)
+* [Installtion](#Install)
+* [User Stories](#US)
+* [Usage](#Usage)
+* [Database Schema](#Database)
+* [Screen Shots](#Shots)
+* [Use live on Heroku](#Heroku)
 
 ## <a name="GEMS">Gems Used</a>
 ```ruby
