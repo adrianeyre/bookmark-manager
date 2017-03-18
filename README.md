@@ -1,6 +1,6 @@
 # Bookmark Manager Challenge
 #### Technologies: Ruby, Rspec, Sinatra, Heroku, HTML, CSS, Postgres, SQL, DataMapper
-### [Makers Academy] (http://www.makersacademy.com) - Week 4 Pair Programming Project
+### [Makers Academy](http://www.makersacademy.com) - Week 4 Pair Programming Project
 
 ## Index
 * [Gems Used] (#GEMS)
@@ -81,7 +81,7 @@ type `http://localhost:4567` into your web browser
 
 ## <a name="Heroku">Use live on Heroku</a>
 
-[Bookmark Manager] (https://adrianeyre-bookmarkmanager.herokuapp.com/)
+[![heroku-48](https://raw.githubusercontent.com/adrianeyre/codewars/master/Ruby/Authored/heroku.png)](https://adrianeyre-bookmarkmanager.herokuapp.com/) [Use on Heroku](https://adrianeyre-bookmarkmanager.herokuapp.com/)
 
 ## <a name="Database">Database Schema</a>
 [![Schema](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema.png)](https://raw.githubusercontent.com/adrianeyre/bookmark-manager/master/images/schema.png "Schema")
